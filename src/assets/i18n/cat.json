@@ -1,6 +1,4 @@
 {
-    
-
     "HEADER":{
         "HOME": "Inici",
         "ABOUT": "Sobre mi",
@@ -11,8 +9,6 @@
 
         "TITLE": "Portafoli",
 
-        
-        
         "ES": "ES",
         "CAT": "CAT",
         "EN": "EN"
@@ -22,7 +18,75 @@
         "WELCOME": "Benvingut/a",
         "DESCRIPTION": "Aqui trobarás la informació sobre mi."
     },
+    
+    
     "ABOUT-ME":{
-        "TITLE": "Sobre mi"
+        "TITLE": "Sobre mi",
+        "FIRST_PARAGRAPH": "Hola, el meu nom és <strong class='text-primary'>Denis Emanuel Lazarian</strong> i soc un desenvolupador web júnior aspirant a programador de perfil full stack. M'encanta aprendre noves tecnologies i millorar les meves habilitats de programació. Actualment, estic aprenent <strong class='text-warning'>Angular</strong> i reforçant els meus coneixements en <strong class='text-warning'>PHP</strong>, a més del framework <strong class='text-warning'> Codeigniter 4</strong>.",
+    
+        "SECOND_PARAGRAPH":"M'agrada treballar en equip i sobretot aprendre dels altres. Em considero una persona responsable, proactiva i amb moltes ganes d'aprendre.",
+        "THIRD_PARAGRAPH": "He estat treballant en projectes personals per a millorar les meves habilitats de programació i aprendre noves tecnologies. Pots veure alguns dels meus projectes en la secció de <a role='button' class='text-primary' id='pro-link-item' (click)='selectLink('projects')'>Projectes</a>. També he estat realitzant pràctiques de formació DUAL en l'empresa EcityClic, on he après a treballar en equip i a desenvolupar aplicacions web en llenguatge <strong class='text-warning'>JAVA</strong>.",
+
+        "LIVE": "<span class='fw-semibold text-primary me-3  '>Ubicació:</span> Lleida, Catalunya (Espanya). <br>",
+        "DOWNLOAD_CV": "Descargar CV",
+        "WORK": "<span class='fw-semibold text-primary me-3 mt-2'>Ocupació actual: </span> Estudiant del grau de Desenvolupament d'aplicacions web (IES Caparrella). <br>",
+
+        "LANGUAGES_LABEL": "Idiomes",
+
+        "SPANISH": "Castellà: Alt",
+        "CATALAN": "Català: Alt",
+        "ROMANIAN": "Romanés: Natiu",
+        "ENGLISH": "Anglès: Mitj-baix"
+    },
+
+    "CONTACT_TITLE": "Contacte",
+
+    "PROJECTS":{
+        "TITLE": "Projectes",
+        "DESCRIPTION": "Aquí trobaràs alguns dels meus projectes personals més destacats.",
+    
+        "PLACEHODEL_SEARCH": "Cerca per etiquetes; PHP, JavaScript",
+    
+        "DAWLY": {
+            "TITLE": "Daw.ly",
+            "DESCRIPTION": "Es tracta d'un sistema gestor de links similar a la plataforma web 'bitly', el qual permet escurçar links i compartir-los en les xarxes socials. El sistema permet gestionar els links escurçats, a més de poder veure les visites a aquest link seleccionant un rang de dies. Per als usuaris amb rol administrador, inclou també una secció d'administració d'usuaris, on es pot veure els usuaris registrats, editar-los, eliminar-los i crear nous usuaris."
+        },
+
+        "CI4-NEWS":{
+            "TITLE": "CI4-News",
+            "DESCRIPTION": "Es tracta d'un gestor de notícies simple on es poden generar, editar, eliminar i visualitzar notícies. El sistema també disposa d'un gestor d'usuaris en els quals s'inclou l'assignació de rols, els quals són: Administrador, Editor i Usuari. El sistema també disposa d'un sistema de login i registre d'usuaris, i algunes de les seves funcions estan restringides per a usuaris no registrats o usuaris amb rol d'específic."
+        },
+
+        "PROJECT-GAME":{
+            "TITLE": "Ahorcado simple",
+            "DESCRIPTION": "Joc del penjat simple, amb un diccionari de paraules en un arxiu de text, i les seves corresponents funcionalitats als encerts o fallades de caràcters segons la paraula seleccionada aleatòriament. No disposa de limiti de fallades, però si de temps, el qual és de 45 segons. El joc en finalitzar la partida es mostra el temps que ha trigat a finalitzar-la, i la paraula que es tènia que endevinar."
+        }
+    },
+
+
+    "WORKS":{
+        "TRAGECTORY_TITLE": "Trajectòria",
+        "TRAGECTORY_DESCRIPTION": "Aquí trobessis la meva experiència laboral i el meu recorregut acadèmic.",
+        "STATISTICS_TITLE": "Les meves competències",
+        "STATISTICS_DESCRIPTION": "Així avaluo les meves capacitats en cada àrea, llenguatge o eina de programació.",
+
+        "TIMELINE_ITEMS":{
+            "ITEM_1": {
+                "TITLE": "Bachillerat",
+                "DESCRIPTION": "Vaig ser estudiant de batxillerat en la modalitat Científic-Tecnològic, en l'Institut la Mitjana a Pardinyes (Lleida-Catalunya, Espanya)."
+            },
+            "ITEM_2": {
+                "TITLE": "Cicle formatiu grau superior (1r Curs)",
+                "DESCRIPTION": "En aquest any em vaig matricular i vaig estudiar el primer curs de DAW (Desenvolupament d'Aplicacions web), on he començat a introduir i entendre l'art de la programació en general. En aquest any he començat la meva ruta en la programació, amb el llenguatge JAVA com primer llenguatge."
+            },
+            "ITEM_3": {
+                "TITLE": "Cicle formatiu grau superior (2n Curs)",
+                "DESCRIPTION": "En aquest any m'he introduït en l'apartat més professional del codi web en general. En aquest any he començat a programar a nivell de frontend i backend, desenvolupant-me a mi mateix, mitjançant pràctiques i exercicis, obtenint experiència amb els llenguatges JavaScript i PHP, juntament amb els seus frameworks, Angular i Codeigniter 4 respectivament."
+            },
+            "ITEM_4": {
+                "TITLE": "Pràctiques a empresa (modalitat DUAL)",
+                "DESCRIPTION": "Al mateix temps que he estat estudiant, també he realitzat les pràctiques d'empresa en modalitat DUAL (durada de 1000 hores) en l'empresa \"Ecityclic\" de Semic, on he après les maneres de treballar en una empresa, i he pogut posar en pràctica els meus coneixements que he estat adquirint en el cicle formatiu."
+            }
+        }
     }
 }

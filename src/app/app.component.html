@@ -8,27 +8,27 @@
                 </a>
                 <ul class="nav col-12 col-lg-10 me-lg-auto mb-2 text-lg-end justify-content-center  justify-content-lg-end mb-md-0   gap-3">
                     <li>
-                        <a id="home" (click)="navbarSelectedOption = 'home'; selectedOptionStyleStatus('home'); enlargeMainScreen();" role="button" class=" nav-link selected  item-nav-link  px-1 sm-font text-white ">
+                        <a id="home" (click)="navbarSelectedOption = 'home'; selectedOptionStyleStatus('home'); " role="button" class=" nav-link selected  item-nav-link  px-1 sm-font text-white ">
                             <i class="bi bi-house"></i> {{'HEADER.HOME'| translate}}
                         </a>
                     </li>
                     <li>
-                        <a id="aboutMe" (click)="navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe'); enlargeMainScreen();" role="button" class="nav-link item-nav-link  px-1 sm-font text-white ">
+                        <a id="aboutMe" (click)="navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe'); " role="button" class="nav-link item-nav-link  px-1 sm-font text-white ">
                             <i class="bi bi-file-earmark-person"></i> {{'HEADER.ABOUT'| translate}}
                         </a>
                     </li>
                     <li>
-                        <a id="projects" (click)="navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects'); enlargeMainScreen();" role="button" class="nav-link  item-nav-link px-1 sm-font text-white ">
+                        <a id="projects" (click)="navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects'); " role="button" class="nav-link  item-nav-link px-1 sm-font text-white ">
                             <i class="bi bi-code-slash"></i> {{'HEADER.PROJECTS'| translate}}
                         </a>
                     </li>
                     <li>
-                        <a id="work" (click)="navbarSelectedOption = 'work'; selectedOptionStyleStatus('work'); enlargeMainScreen();" role="button" class="nav-link px-1  item-nav-link sm-font text-white ">
+                        <a id="work" (click)="navbarSelectedOption = 'work'; selectedOptionStyleStatus('work'); " role="button" class="nav-link px-1  item-nav-link sm-font text-white ">
                             <i class="bi bi-person-workspace"></i> {{'HEADER.WORKS'| translate}}
                         </a>
                     </li>
                     <li>
-                        <a id="contact" (click)="navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact'); enlargeMainScreen();" role="button" class="nav-link item-nav-link  px-1 sm-font text-white ">
+                        <a id="contact" (click)="navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact'); " role="button" class="nav-link item-nav-link  px-1 sm-font text-white ">
                             <i class="bi bi-person-lines-fill"></i> {{'HEADER.CONTACT'| translate}}
                         </a>
                     </li>
@@ -43,7 +43,7 @@
             </div>
             </div>
         </header>
-        <main class="" id="main" (window:resize)="enlargeMainScreen()" >
+        <main class="" id="main"  >
             <div *ngIf="navbarSelectedOption=='aboutMe'">
                 <div class="" style="min-height: 100vh; ">
                     <app-about-me id="cont" (newEventEmiter)="selectedLink($event)"></app-about-me>

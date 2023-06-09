@@ -20,7 +20,6 @@ export class AppComponent  {
   constructor(private _router:Router, private translateService: TranslateService) { 
     this.translateService.setDefaultLang(this.selectedLanguage);
     this.translateService.use(this.selectedLanguage);
-    console.log(this.translateService.getBrowserLang());
   }
 
   selectedOptionStyleStatus(id: string): void{
@@ -47,18 +46,6 @@ export class AppComponent  {
     }
     
   }
-  enlargeMainScreen():void{
-
-    let heightScreen = window.innerHeight;
-
-    let mainScreen = document.getElementById('cont')?.offsetHeight;
-    let footerScreen = document.getElementById('foot')?.offsetHeight;
-    let headScreen = document.getElementById('head')?.offsetHeight;
-
-    console.log(heightScreen+" "+ headScreen+" " +mainScreen+" "+footerScreen);
-
-  }
-
   debugItem(item: string): void{
     console.log(item);
   }
