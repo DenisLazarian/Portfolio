@@ -59,7 +59,7 @@ export class AppComponent  {
       this.translateService.use(lang);
       
       let options = document.querySelectorAll('#select-lang options');
-
+    // cambio prueba
       for (let index = 0; index < options.length; index++) {
         if(options[index].nodeValue == lang){
           options[index].setAttribute('selected', 'selected');
