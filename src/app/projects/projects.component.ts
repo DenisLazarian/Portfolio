@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { marker } from '@biesbjerg/ngx-translate-extract-marker';
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
 
 
 @Component({
@@ -52,12 +52,12 @@ export class ProjectsComponent implements OnInit {
     let tag = document.getElementById('main');
   }
 
-  prueba:string = marker('PROJECTS.DAWLY.TITLE');
+  // prueba:string = _('PROJECTS.DAWLY.TITLE');
 
   projects:any = [
     {
-      title: marker('PROJECTS.DAWLY.TITLE'),
-      description: marker("PROJECTS.DAWLY.DESCRIPTION"),
+      title: _('PROJECTS.DAWLY.TITLE'),
+      description: _("PROJECTS.DAWLY.DESCRIPTION"),
       image: "assets/img/src-img/dawli.JPG",
       url_host: "#",
       url_github: "https://github.com/DenisLazarian/CI4-daw.li",
@@ -66,8 +66,8 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      title: "CI4-News",
-      description: `Se trata de un gestor de noticias simple donde se pueden generar, editar, eliminar y visualizar noticias. El sistema también dispone de un gestor de usuarios en los cuales se incluye la asignación de roles, los cuales son: Administrador, Editor y Usuario. El sistema también dispone de un sistema de login y registro de usuarios, y algunas de sus funciones están restringidas para usuarios no registrados o usuarios con rol de específico.`,
+      title:  _('PROJECTS.CI4-NEWS.TITLE'),
+      description: _("PROJECTS.CI4-NEWS.DESCRIPTION"),
       image: "assets/img/src-img/ci-news.JPG",
       url_host: "#",
       url_github: "https://github.com/DenisLazarian/ci4-news",
@@ -96,8 +96,8 @@ export class ProjectsComponent implements OnInit {
     //   ]
     // },
     {
-      title: "Ahorcado simple",
-      description: `Juego del ahorcado simple, con un diccionario de palabras en un archivo de texto, i sus correspondientes funcionalidades a los aciertos o fallos de caracteres segun la palabra seleccionada aleatoriamente. No dispone de limite de fallos, pero si de tiempo, el cual es de 45 segundos. El juego al finalizar la partida se muestra el tiempo que ha tardado en finalizarla, y la palabra que se tenia que adivinar`,
+      title:  _('PROJECTS.PROJECT-GAME.TITLE'),
+      description: _('PROJECTS.PROJECT-GAME.DESCRIPTION'),
       image: "assets/img/src-img/ahorcado_simple.JPG", 
       url_host: "#",
       url_github: "https://github.com/DenisLazarian/Ahorcado_simple",

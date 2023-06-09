@@ -28,8 +28,8 @@
                                 </div>
                             </div>
                             <div class="card-body description-card">
-                                <h5>{{project.title}}</h5>
-                                <p class="card-text">{{project.description}}</p>
+                                <h5>{{project.title | translate}}</h5>
+                                <p class="card-text">{{project.description | translate}}</p>
                                 <div class="d-flex flex-wrap gap-2 tags-list ">
                                     <div *ngFor="let tag of project.lang_tags; let y = index" >
                                         <div class="tags-languajes unstyled">{{tag}}</div>
@@ -49,4 +49,3 @@
     </div>
 </div>
 
-{{prueba}}

@@ -2,8 +2,8 @@
 <div class="main-work">
     <div class=" container justify-content-center ">
         <div class="works-cont text-white">
-            <h1 class="text-start ">Trayectoria</h1>
-            <p class="lead ">Aqui encontraras mi experiencia laboral i mi recorrido académico.</p>
+            <h1 class="text-start ">{{"WORKS.TRAGECTORY_TITLE" | translate}}</h1>
+            <p class="lead ">{{"WORKS.TRAGECTORY_DESCRIPTION" | translate}}</p>
 
             <hr>
 
@@ -13,8 +13,8 @@
                         <div class="container-timeline-label" [ngClass]="{ left: i%2!==0, right:i%2==0}">
                             <div class="content">
                             <h2>{{entry.title}}</h2>
-                            <h5 class="mt-4 fs-5" *ngIf="entry.subtitle != null">{{entry.subtitle}}</h5>
-                            <p>{{entry.detail}}</p>
+                            <h5 class="mt-4 fs-5" *ngIf="entry.subtitle != null">{{entry.subtitle | translate}}</h5>
+                            <p>{{entry.detail | translate}}</p>
                             </div>
                         </div>
                     </div>
@@ -23,8 +23,8 @@
             </div>
             <hr>
             <div>
-                <h3>Mis competencias</h3>
-                <p class="lead">Así avaluo mis capacidades en cada area, lenguaje o herramienta de programación.</p>
+                <h3>{{"WORKS.STATISTICS_TITLE" | translate}}</h3>
+                <p class="lead">{{"WORKS.STATISTICS_DESCRIPTION" | translate}}</p>
 
                 <canvas  id="skillsCharts" >{{ chart }}</canvas>
             </div>
