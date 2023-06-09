@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-root',
@@ -12,18 +14,21 @@ export class AppComponent  {
   fullYear:string = new Date().getFullYear().toString();
 
   navbarSelectedOption = 'home';
+  selectedLanguage = 'es';
 
-  constructor(private _router:Router) { }
+
+  constructor(private _router:Router, private translateService: TranslateService) { 
+    this.translateService.setDefaultLang(this.selectedLanguage);
+    this.translateService.use(this.selectedLanguage);
+    console.log(this.translateService.getBrowserLang());
+  }
 
   selectedOptionStyleStatus(id: string): void{
     let classItem = 'item-nav-link';
     // this.debugItem(id);
     
     if(id == this.navbarSelectedOption){
-      // document.getElementById(id)?.classList.add('bg-white');
-      // document.getElementById(id)?.classList.add('text-muted');
       document.getElementById(id)?.classList.add('selected');
-
       this.removeStyleStatusSelection(classItem);
     }
 
@@ -42,8 +47,6 @@ export class AppComponent  {
     }
     
   }
-
- 
   enlargeMainScreen():void{
 
     let heightScreen = window.innerHeight;
@@ -63,5 +66,19 @@ export class AppComponent  {
   selectedLink(itemSelected:string):void{
     this.navbarSelectedOption = itemSelected;
     this.selectedOptionStyleStatus(itemSelected);
+  }
+
+  selectLanguage(lang: string) {
+      this.translateService.use(lang);
+      
+      let options = document.querySelectorAll('#select-lang options');
+
+      for (let index = 0; index < options.length; index++) {
+        if(options[index].nodeValue == lang){
+          options[index].setAttribute('selected', 'selected');
+        }else{
+          options[index].removeAttribute('selected');
+        }
+      }
   }
 }

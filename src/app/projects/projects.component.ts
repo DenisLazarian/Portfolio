@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { marker } from '@biesbjerg/ngx-translate-extract-marker';
+
 
 @Component({
   selector: 'app-projects',
@@ -50,12 +52,12 @@ export class ProjectsComponent implements OnInit {
     let tag = document.getElementById('main');
   }
 
-  
+  prueba:string = marker('PROJECTS.DAWLY.TITLE');
 
   projects:any = [
     {
-      title: "Daw.ly",
-      description: "Se trata de un sistema gestor de links similar a la plataforma web 'bitly', el cual permite acortar links y compartirlos en las redes sociales. El sistema permite gestionar los links acortados, además de poder ver las visitas a ese link seleccionando un rango de días. Para los usuarios con rol administrador, incluye también una sección de administración de usuarios, donde se puede ver los usuarios registrados, editarlos, eliminarlos y crear nuevos usuarios.",
+      title: marker('PROJECTS.DAWLY.TITLE'),
+      description: marker("PROJECTS.DAWLY.DESCRIPTION"),
       image: "assets/img/src-img/dawli.JPG",
       url_host: "#",
       url_github: "https://github.com/DenisLazarian/CI4-daw.li",

@@ -1,0 +1,25 @@
+{
+    
+
+    "HEADER":{
+        "HOME": "Inici",
+        "ABOUT": "Sobre mi",
+        "CONTACT": "Contacte",
+        "LANG": "Idioma",
+        "PROJECTS": "Projectes",
+        "WORKS": "Treballs",
+        
+        
+        "ES": "ES",
+        "CAT": "CAT",
+        "EN": "EN"
+    },
+
+    "HOME_PAGE": {
+        "WELCOME": "Benvingut/a",
+        "DESCRIPTION": "Aqui trobarás la informació sobre mi."
+    },
+    "ABOUT-ME":{
+        "TITLE": "Sobre mi"
+    }
+}
