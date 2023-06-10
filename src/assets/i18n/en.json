@@ -21,7 +21,8 @@
         "EN": "EN"
     },
     "ABOUT-ME":{
-        "TITLE": "About me"
+        "TITLE": "About me",
+        "DESCRIPTION": "prove"
     }
 
 }
