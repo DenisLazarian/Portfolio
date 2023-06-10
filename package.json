@@ -24,6 +24,7 @@
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
     "@popperjs/core": "^2.11.8",
+    "@scullyio/init": "^2.1.21",
     "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.10.5",
     "chart.js": "^4.3.0",
