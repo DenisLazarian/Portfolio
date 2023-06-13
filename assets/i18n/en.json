@@ -1,0 +1,27 @@
+{
+    "HOME_PAGE": {
+        "WELCOME": "Welcome",
+        "DESCRIPTION": "Here you will find the information about me"
+    },
+
+    "HEADER":{
+        "HOME": "Home",
+        "ABOUT": "About me",
+        "CONTACT": "Contact",
+        "LANG": "Language",
+        "PROJECTS": "Projects",
+        "WORKS": "Works",
+
+        "TITLE": "Portfolio",
+
+        
+        
+        "ES": "ES",
+        "CAT": "CAT",
+        "EN": "EN"
+    },
+    "ABOUT-ME":{
+        "TITLE": "About me"
+    }
+
+}
