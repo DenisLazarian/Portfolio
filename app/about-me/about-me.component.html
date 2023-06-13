@@ -1,0 +1,34 @@
+<div class="main-about">
+    <div class="container  justify-content-center">
+        <div class="cont-inicio">
+            <h3 class="mb-4">{{'ABOUT-ME.TITLE' | translate}}</h3>
+            <div class="row gap-4">
+                <div class="col-md-6">
+                    <p [innerHTML]="'ABOUT-ME.FIRST_PARAGRAPH' | translate">
+                        
+                    </p>
+                    <p>
+                        {{'ABOUT-ME.SECOND_PARAGRAPH' | translate}}
+                    </p>
+                    <p [innerHTML]="'ABOUT-ME.THIRD_PARAGRAPH' | translate">
+                    </p>    
+                </div>
+                <div class="col-md-5 d-block" >
+                    <p [innerHTML]="'ABOUT-ME.LIVE' | translate"></p>
+                    <p [innerHTML]="'ABOUT-ME.WORK' | translate"></p>
+                    <span class="fw-semibold text-primary me-3 mt-2">{{'ABOUT-ME.LANGUAGES_LABEL' | translate}}: </span>  
+                    <div  class=" mt-2 container gap-3 row" >
+                        <span class="col-sm-6 col-md-6 col-lg-6 lang-item ">{{'ABOUT-ME.SPANISH' | translate}}</span>
+                        <span class="col-sm-5 col-md-5 col-lg-5 lang-item ">{{'ABOUT-ME.CATALAN' | translate}}</span>
+                        <span class="col-sm-6 col-md-6 col-lg-6 lang-item ">{{'ABOUT-ME.ROMANIAN' | translate}}</span>
+                        <span class="col-sm-5 col-md-5 col-lg-5 lang-item ">{{'ABOUT-ME.ENGLISH' | translate}}</span>
+                    </div>
+                    <div class="text-center cont-boton-download">
+                        <a [href]="pdfURL" class=" download-CV mt-5">{{'ABOUT-ME.DOWNLOAD_CV' | translate}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="elementoMargin"></div>
+</div>

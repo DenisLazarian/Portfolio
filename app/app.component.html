@@ -1,0 +1,92 @@
+    <div class="pricipal-container">
+        <header class="p-3 bg-dark text-white" id="head">
+            <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none gap-3">
+                <i class="bi bi-code-square fs-2"></i>
+                <h4>{{'HEADER.TITLE' | translate}}</h4>
+                </a>
+                <ul class="nav col-12 col-lg-10 me-lg-auto mb-2 text-lg-end justify-content-center  justify-content-lg-end mb-md-0   gap-3">
+                    <li>
+                        <a id="home" (click)="navbarSelectedOption = 'home'; selectedOptionStyleStatus('home'); " role="button" class=" nav-link selected  item-nav-link  px-1 sm-font text-white ">
+                            <i class="bi bi-house"></i> {{'HEADER.HOME'| translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="aboutMe" (click)="navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe'); " role="button" class="nav-link item-nav-link  px-1 sm-font text-white ">
+                            <i class="bi bi-file-earmark-person"></i> {{'HEADER.ABOUT'| translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="projects" (click)="navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects'); " role="button" class="nav-link  item-nav-link px-1 sm-font text-white ">
+                            <i class="bi bi-code-slash"></i> {{'HEADER.PROJECTS'| translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="work" (click)="navbarSelectedOption = 'work'; selectedOptionStyleStatus('work'); " role="button" class="nav-link px-1  item-nav-link sm-font text-white ">
+                            <i class="bi bi-person-workspace"></i> {{'HEADER.WORKS'| translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contact" (click)="navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact'); " role="button" class="nav-link item-nav-link  px-1 sm-font text-white ">
+                            <i class="bi bi-person-lines-fill"></i> {{'HEADER.CONTACT'| translate}}
+                        </a>
+                    </li>
+                    <select name="" id="select-lang" class="form-select bg-dark text-white" style="width: 80px;" 
+                    [ngModel]="selectedLanguage"
+                    (ngModelChange)="selectLanguage($event)">
+                        <option value="es">{{'HEADER.ES' | translate}}</option>
+                        <option value="en">{{'HEADER.EN' | translate}}</option>
+                        <option value="cat">{{'HEADER.CAT' | translate}}</option>
+                    </select>
+                </ul>
+            </div>
+            </div>
+        </header>
+        <main class="" id="main"  >
+            <div *ngIf="navbarSelectedOption=='aboutMe'">
+                <div class="" style="min-height: 100vh; ">
+                    <app-about-me id="cont" (newEventEmiter)="selectedLink($event)"></app-about-me>
+                </div>
+            </div>
+            <div *ngIf="navbarSelectedOption=='home'">
+                <div class="" style="min-height: 100vh; ">
+                    <app-home  id="cont" class="d-flex justify-content-center fondo-home"></app-home>
+                </div>
+            </div>
+            <div *ngIf="navbarSelectedOption=='projects'">
+                <div class="" style="min-height: 100vh;">
+                    <app-projects id="cont"></app-projects>
+                </div>
+            </div>
+            <div *ngIf="navbarSelectedOption=='work'">
+                <div class="" style="min-height: 100vh; ">
+                    <app-work id="cont" class=""></app-work>
+                </div>
+            </div>
+            <div *ngIf="navbarSelectedOption=='contact'">
+                <div class="" style="min-height: 100vh; ">
+                    <app-contact id="cont"></app-contact>
+                </div>
+            </div>
+        </main>
+            <div class=" footer-container mt-auto" id="foot">
+                <div class="container  ">
+                    <footer class="mt-0 mb-0 mb- d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-white" >
+                        <p class="col-md-4 mb-0 sm-font text-white" >&copy; <span id="year" >{{fullYear}}</span> All rights reserved. Created by Denis Emanuel Lazarian. <br>
+                            Made with 
+                            <strong > 
+                                Angular
+                            </strong> 
+                        </p>
+                        <ul class="nav col-md-4 justify-content-end ">
+                            <li class="nav-item"><a (click)=" navbarSelectedOption = 'home'; selectedOptionStyleStatus('home');" role="button" class="footer-item-nav sm-font rounded nav-link px-2 ">{{'HEADER.HOME' | translate}}</a></li>
+                            <li class="nav-item"><a (click)=" navbarSelectedOption = 'aboutMe'; selectedOptionStyleStatus('aboutMe');" role="button" class="footer-item-nav sm-font rounded nav-link px-2 ">{{'HEADER.ABOUT' | translate}}</a></li>
+                            <li class="nav-item"><a (click)=" navbarSelectedOption = 'projects'; selectedOptionStyleStatus('projects');" role="button" class="footer-item-nav rounded sm-font nav-link px-2 ">{{'HEADER.PROJECTS' | translate}}</a></li>
+                            <li class="nav-item"><a (click)=" navbarSelectedOption = 'work'; selectedOptionStyleStatus('work');" role="button" class="footer-item-nav sm-font rounded nav-link px-2 ">{{'HEADER.WORKS' | translate}}</a></li>
+                            <li class="nav-item"><a (click)=" navbarSelectedOption = 'contact'; selectedOptionStyleStatus('contact');" role="button" class="footer-item-nav sm-font rounded nav-link px-2 ">{{'HEADER.CONTACT' | translate}}</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+    </div>

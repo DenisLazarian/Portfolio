@@ -1,0 +1,51 @@
+<!-- <p>projects works!</p> -->
+
+<div class="main-projects" >
+    <div class="container">
+        <div class="cont-project">
+            <h1>
+                {{'PROJECTS.TITLE' | translate}}
+            </h1>
+            <p class="lead">
+                {{'PROJECTS.DESCRIPTION' | translate}}
+            </p>
+            <hr>
+            <div class="input-group">
+                <label for="search" class="input-group-text border-0   icon-search" id="basic-addon1" ><i class=" bi bi-search text-white"></i></label>
+                <input (input)="searchProject()" id="search" type="text" class="form-control border-0 text-white" placeholder="{{'PROJECTS.PLACEHODEL_SEARCH' | translate}}" style="background-color: #2d3951;">
+            </div>
+            <div *ngIf="projectsSearched.length > 0; else elseBlock">
+                <div class="d-flex gap-5 d-inline-block  flex-wrap mt-5 justify-content-center" >
+                    <div *ngFor="let project of projectsSearched; let i = index">
+                        <div class="card container-personalized " style="width: 15rem;">
+                            <div class="img-card position-relative">
+                                <img [src]='project.image' class="card-img-top img-fluid imagen"  alt="...">
+                                <div class="action">
+                                    <div *ngIf="project.url_host != '#'">
+                                        <a href={{project.url_host}} class="select-button-options  " title="Abrir en web"><i class="bi bi-database-fill"></i></a>
+                                    </div>
+                                    <a href={{project.url_github}} class="select-button-options  " title="Ver proyecto en Github"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body description-card">
+                                <h5>{{project.title | translate}}</h5>
+                                <p class="card-text">{{project.description | translate}}</p>
+                                <div class="d-flex flex-wrap gap-2 tags-list ">
+                                    <div *ngFor="let tag of project.lang_tags; let y = index" >
+                                        <div class="tags-languajes unstyled">{{tag}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ng-template #elseBlock>
+                <div id="alert" class="notFoundClass d-flex gap-1 justify-content-center rounded border border-warning-1 ">
+                    <i class="bi bi-exclamation-circle-fill"></i> <span>No hay proyectos con esa etiqueta</span>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>
+
