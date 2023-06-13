@@ -18,6 +18,15 @@ export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
+import { ScullyLibModule } from '@scullyio/ng-lib';
+
+export interface ScullyLibConfig {
+  useTransferState?: boolean;
+  alwaysMonitor?: boolean;
+  manualIdle?: boolean;
+  baseURIForScullyContent?: string;
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +41,7 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ScullyLibModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
