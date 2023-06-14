@@ -1,4 +1,4 @@
-name: CLI
+name: Build and Deploy
 
 on:
   push:
@@ -11,18 +11,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Scully Publish
-        # You may pin to the exact commit or the version.
-        # uses: cmgriffing/scully-gh-pages-action@089c8e948312fa3ad94d1ebc9d763df442c839a8
-        uses: cmgriffing/scully-gh-pages-action@v9
-        with:
-          # A personal access token needed to push your site after it has been built.
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          # The branch expected by GitHub to have the static files needed for your site.
-          deploy-branch: production # optional, default is master
-          # Additional arguments that get passed to `npm run build`.
-          #build-args: # optional, default is 
-          # Additional arguments that get passed to `npm run scully`.
-          #scully-args: # optional, default is 
+    - name: Checkout
+      uses: actions/checkout@v1
+    - uses: actions/setup-node@v1 #this installs node and npm for us
+      with:
+        node-version: '18.x'
+    - uses: actions/cache@v1 # this allows for re-using node_modules caching, making builds a bit faster.
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-    
+    - name: Build
+      run: |
+        npm install
+        npm run-script deploy
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist/angular-ci-cd
     
