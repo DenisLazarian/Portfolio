@@ -27,8 +27,8 @@
         "SECOND_PARAGRAPH":"I like to work as a team and, above all, learn from others. I consider myself to be a responsible, proactive person and eager to learn.",
         "THIRD_PARAGRAPH": "I've been working on personal projects to improve my skills and learn new technologies. I have also been doing dual training at EcityClic, where I have learned to work as a team and develop web applications in the language <strong class='text-warning'>JAVA</strong>. You can see some of my projects in the section of ",
 
-        "LIVE": "<span class='fw-semibold text-primary me-3  '>Ubicació:</span> Lleida, Catalunya (Espanya). <br>",
-        "DOWNLOAD_CV": "Descargar CV",
+        "LIVE": "<span class='fw-semibold text-primary me-3  '>Location:</span> Lleida, Catalonia (Spain). <br>",
+        "DOWNLOAD_CV": "Download CV",
         "WORK": "<span class='fw-semibold text-primary me-3 mt-2'>Current Employment: </span> Studying the degree of Web Application Development (IES Caparrella). <br>",
 
         "LANGUAGES_LABEL": "Languages",
