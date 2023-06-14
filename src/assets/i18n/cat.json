@@ -25,13 +25,16 @@
         "FIRST_PARAGRAPH": "Hola, el meu nom és <strong class='text-primary'>Denis Emanuel Lazarian</strong> i soc un desenvolupador web júnior aspirant a programador de perfil full stack. M'encanta aprendre noves tecnologies i millorar les meves habilitats de programació. Actualment, estic aprenent <strong class='text-warning'>Angular</strong> i reforçant els meus coneixements en <strong class='text-warning'>PHP</strong>, a més del framework <strong class='text-warning'> Codeigniter 4</strong>.",
     
         "SECOND_PARAGRAPH":"M'agrada treballar en equip i sobretot aprendre dels altres. Em considero una persona responsable, proactiva i amb moltes ganes d'aprendre.",
-        "THIRD_PARAGRAPH": "He estat treballant en projectes personals per a millorar les meves habilitats de programació i aprendre noves tecnologies. Pots veure alguns dels meus projectes en la secció de <a role='button' class='text-primary' id='pro-link-item' (click)='selectLink('projects')'>Projectes</a>. També he estat realitzant pràctiques de formació DUAL en l'empresa EcityClic, on he après a treballar en equip i a desenvolupar aplicacions web en llenguatge <strong class='text-warning'>JAVA</strong>.",
+        "THIRD_PARAGRAPH": "He estat treballant en projectes personals per a millorar les meves habilitats de programació i aprendre noves tecnologies. També he estat realitzant pràctiques de formació DUAL en l'empresa EcityClic, on he après a treballar en equip i a desenvolupar aplicacions web en llenguatge <strong class='text-warning'>JAVA</strong>. Pots veure alguns dels meus projectes en la secció de ",
 
         "LIVE": "<span class='fw-semibold text-primary me-3  '>Ubicació:</span> Lleida, Catalunya (Espanya). <br>",
         "DOWNLOAD_CV": "Descargar CV",
         "WORK": "<span class='fw-semibold text-primary me-3 mt-2'>Ocupació actual: </span> Estudiant del grau de Desenvolupament d'aplicacions web (IES Caparrella). <br>",
 
         "LANGUAGES_LABEL": "Idiomes",
+
+        "PROJECTS": "Projectes",
+
 
         "SPANISH": "Castellà: Alt",
         "CATALAN": "Català: Alt",
@@ -45,7 +48,7 @@
         "TITLE": "Projectes",
         "DESCRIPTION": "Aquí trobaràs alguns dels meus projectes personals més destacats.",
     
-        "PLACEHODEL_SEARCH": "Cerca per etiquetes; PHP, JavaScript",
+        "PLACEHODEL_SEARCH": "Cerca per etiquetes; PHP, JavaScript...",
     
         "DAWLY": {
             "TITLE": "Daw.ly",

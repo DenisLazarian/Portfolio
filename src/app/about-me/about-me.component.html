@@ -10,8 +10,13 @@
                     <p>
                         {{'ABOUT-ME.SECOND_PARAGRAPH' | translate}}
                     </p>
-                    <p [innerHTML]="'ABOUT-ME.THIRD_PARAGRAPH' | translate">
-                    </p>    
+                    <p>
+                        <span [innerHTML]="'ABOUT-ME.THIRD_PARAGRAPH' | translate">
+                        </span> 
+                        <span>
+                            <a role='button' class='text-primary fw-semibold' id='pro-link-item' (click)='selectLink("projects")'>{{'ABOUT-ME.PROJECTS' | translate}}</a>.
+                        </span>
+                    </p>
                 </div>
                 <div class="col-md-5 d-block" >
                     <p [innerHTML]="'ABOUT-ME.LIVE' | translate"></p>
@@ -22,6 +27,8 @@
                         <span class="col-sm-5 col-md-5 col-lg-5 lang-item ">{{'ABOUT-ME.CATALAN' | translate}}</span>
                         <span class="col-sm-6 col-md-6 col-lg-6 lang-item ">{{'ABOUT-ME.ROMANIAN' | translate}}</span>
                         <span class="col-sm-5 col-md-5 col-lg-5 lang-item ">{{'ABOUT-ME.ENGLISH' | translate}}</span>
+                        
+
                     </div>
                     <div class="text-center cont-boton-download">
                         <a [href]="pdfURL" class=" download-CV mt-5">{{'ABOUT-ME.DOWNLOAD_CV' | translate}}</a>
