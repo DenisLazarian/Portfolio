@@ -49,6 +49,8 @@
         "DESCRIPTION": "Aquí trobaràs alguns dels meus projectes personals més destacats.",
     
         "PLACEHODEL_SEARCH": "Cerca per etiquetes; PHP, JavaScript...",
+
+        "ALERT_MESSAGE": "No s'han trobat projectes amb aquesta etiqueta.",
     
         "DAWLY": {
             "TITLE": "Daw.ly",

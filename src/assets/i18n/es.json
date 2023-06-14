@@ -48,6 +48,8 @@
         "DESCRIPTION": "Aquí encontrarás algunos de mis proyectos personales más destacados.",
     
         "PLACEHODEL_SEARCH": "Búsqueda por etiquetas; PHP, JavaScript...",
+        "ALERT_MESSAGE": "No se han encontrado proyectos con esta etiqueta.",
+
         "DAWLY": {
             "TITLE": "Daw.ly",
             "DESCRIPTION": "Se trata de un sistema gestor de links similar a la plataforma web 'bitly', el cual permite acortar links y compartirlos en las redes sociales. El sistema permite gestionar los links acortados, además de poder ver las visitas a ese link seleccionando un rango de días. Para los usuarios con rol administrador, incluye también una sección de administración de usuarios, donde se puede ver los usuarios registrados, editarlos, eliminarlos y crear nuevos usuarios."

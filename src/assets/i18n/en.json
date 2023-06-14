@@ -49,6 +49,9 @@
         "DESCRIPTION": "Here you will find some of my personal projects most prominent.",
     
         "PLACEHODEL_SEARCH": "Search by tags; PHP, JavaScript...",
+
+        "ALERT_MESSAGE": "There are no projects with the specified tag.",
+
     
         "DAWLY": {
             "TITLE": "Daw.ly",
