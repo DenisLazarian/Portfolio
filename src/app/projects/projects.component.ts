@@ -27,7 +27,7 @@ export class ProjectsComponent implements OnInit {
     }else{
       this.projects.forEach((project:any) => {
         for (let y = 0; y < project.lang_tags.length; y++) {
-          if(project.lang_tags[y].toLowerCase().includes(search.toLowerCase()) && !this.projectFinded){
+          if(project.lang_tags[y].toLowerCase().includes(search.toLowerCase().trim()) && !this.projectFinded){
             this.projectsSearched.push(project);
             this.projectFinded = true;
           }
@@ -75,36 +75,16 @@ export class ProjectsComponent implements OnInit {
         "PHP", "Codeigniter 4", "MySQL", "HTML", "Bootstrap 5"
       ]
     },
-    // {
-    //   title: "Proyecto 2",
-    //   description: `Lorem ipsum dolor si veritatis eum in exercitationem, saepe hic voluptate! Natus omnis quod iusto commodi qui veritatis magni porro consequuntur earum corporis!`,
-    //   image: "assets/img/notFoundImage.png",
-    //   url_host: "#",
-    //   url_github: "#",
-    //   lang_tags:[
-    //     "Spring Boot","JavaScript","HTML","CSS","MySQL","API REST"
-    //   ]
-    // },
-    // {
-    //   title: "Proyecto 3",
-    //   description: `Lorem ipsum dolor si veritatis eum in exercitationem, saepe hic voluptate! Natus omnis quod iusto commodi qui veritatis magni porro consequuntur earum corporis!`,
-    //   image: "assets/img/notFoundImage.png",
-    //   url_host: "#",
-    //   url_github: "#",
-    //   lang_tags:[
-    //     "Java","JavaScript","HTML","CSS","API REST"
-    //   ]
-    // },
     {
-      title:  _('PROJECTS.PROJECT-GAME.TITLE'),
-      description: _('PROJECTS.PROJECT-GAME.DESCRIPTION'),
-      image: "assets/img/src-img/ahorcado_simple.JPG", 
+      title: _('PROJECTS.FLOURISH-AND-BLOTTS.TITLE'),
+      description: _("PROJECTS.FLOURISH-AND-BLOTTS.DESCRIPTION"),
+      image: "assets/img/notFoundImage.png",
       url_host: "#",
-      url_github: "https://github.com/DenisLazarian/Ahorcado_simple",
+      url_github: "https://github.com/DenisLazarian/Flouris_and_Blotts",
       lang_tags:[
-        "JavaScript","HTML","CSS"
+        "Java","TypeScript","HTML","CSS","API REST", "Spring Boot"
       ]
-    }
+    },
     
   ]
 
