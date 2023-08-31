@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  pdfURL:string = 'assets/CV-Estandarizado.pdf';
+  pdfURL:string = 'assets/CV-Denis.E.Lazarian.pdf';
 
   @Output() newEventEmiter = new EventEmitter<string>();
 
