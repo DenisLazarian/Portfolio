@@ -63,9 +63,9 @@
             "DESCRIPTION": "It is a simple news manager where news can be generated, edited, deleted and viewed. The system also has a user manager that includes role assignments, which are: Administrator, Editor and User. The system also has a user login and registration system, and some of its functions are restricted to unregistered users or users with specific roles."
         },
         
-        "PROJECT-GAME":{
-            "TITLE": "Ahorcado simple",
-            "DESCRIPTION": "I'm from the simple hangman, with a dictionary of words in a text file, and their corresponding functionality to the right or wrong character depending on the randomly selected word. It doesn't have a time limit for failures, but it does have a time limit of 45 seconds. The game at the end of the game shows the time it took to finish it, and the word it took to guess."
+        "FLOURISH-AND-BLOTTS":{
+            "TITLE": "Flourish and Blotts",
+            "DESCRIPTION": "It is a web project that simulates the service of a high school library, where you can see the available books, and you can also make requests for bookkeeping and bookkeeping. It also offers other services and functions for the role of responsible administrators, which are responsible for managing the library, where they perform basic functions such as managing books, assigning grants, setting penalties, among other functions. More information in project repository."
         }
     },
 

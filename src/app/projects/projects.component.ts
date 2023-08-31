@@ -78,7 +78,7 @@ export class ProjectsComponent implements OnInit {
     {
       title: _('PROJECTS.FLOURISH-AND-BLOTTS.TITLE'),
       description: _("PROJECTS.FLOURISH-AND-BLOTTS.DESCRIPTION"),
-      image: "assets/img/notFoundImage.png",
+      image: "assets/img/src-img/flourishAndBlottsImage.png",
       url_host: "#",
       url_github: "https://github.com/DenisLazarian/Flouris_and_Blotts",
       lang_tags:[

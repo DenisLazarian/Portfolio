@@ -62,9 +62,9 @@
             "DESCRIPTION": "Es tracta d'un gestor de notícies simple on es poden generar, editar, eliminar i visualitzar notícies. El sistema també disposa d'un gestor d'usuaris en els quals s'inclou l'assignació de rols, els quals són: Administrador, Editor i Usuari. El sistema també disposa d'un sistema de login i registre d'usuaris, i algunes de les seves funcions estan restringides per a usuaris no registrats o usuaris amb rol d'específic."
         },
 
-        "PROJECT-GAME":{
-            "TITLE": "Ahorcado simple",
-            "DESCRIPTION": "Joc del penjat simple, amb un diccionari de paraules en un arxiu de text, i les seves corresponents funcionalitats als encerts o fallades de caràcters segons la paraula seleccionada aleatòriament. No disposa de limiti de fallades, però si de temps, el qual és de 45 segons. El joc en finalitzar la partida es mostra el temps que ha trigat a finalitzar-la, i la paraula que es tènia que endevinar."
+        "FLOURISH-AND-BLOTTS":{
+            "TITLE": "Flourish and Blotts",
+            "DESCRIPTION": "Es tracta d'un projecte web que simula el servei d'una biblioteca d'institut, on es poden veure els llibres disponibles, i també es pot realitzar peticions de prestem i reserves de llibres. També ofereix altres serveis i funcionis per al rol d'administradors responsables, els quals són els encarregats de gestionar la biblioteca, on realitzen les funcions bàsiques com la de gestionar llibres, assignar prestem, establir penalitzacions, entre altres funcions. Mes informació en el repositori del projecte."
         }
     },
 
