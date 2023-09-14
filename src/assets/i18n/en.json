@@ -1,99 +1,106 @@
 {
     "HOME_PAGE": {
-        "WELCOME": "Welcome",
-        "DESCRIPTION": "Here you will find the information about me"
+        "WELCOME": "Bienvenido/a",
+        "DESCRIPTION": "Aqui econtrarás la información sobre mi"
     },
 
     "HEADER":{
-        "HOME": "Home",
-        "ABOUT": "About me",
-        "CONTACT": "Contact",
-        "LANG": "Language",
-        "PROJECTS": "Projects",
-        "WORKS": "Works",
-
-        "TITLE": "Portfolio",
-
+        "HOME": "Inicio",
+        "ABOUT": "Sobre mi",
+        "CONTACT": "Contacto",
+        "LANG": "Idioma",
+        "PROJECTS": "Proyectos",
+        "WORKS": "Trabajos",
         
         
         "ES": "ES",
         "CAT": "CAT",
-        "EN": "EN"
+        "EN": "EN",
+
+        "TITLE": "Portafolio"
     },
+
     "ABOUT-ME":{
-        "TITLE": "About me",
-        "FIRST_PARAGRAPH": "Hi, my name is <strong class='text-primary'>Denis Emanuel Lazarian</strong> and I'm a junior web developer aspiring full stack profile. I love learning new technologies and improving my skills. I'm currently learning <strong class='text-warning'>Angular</strong> and reinforcing my knowledge in <strong class='text-warning'>PHP</strong>, in addition to framework <strong class='text-warning'>Codeigniter 4</strong>.",
+        "TITLE": "Sobre mi",
+        "FIRST_PARAGRAPH": "Hola, mi nombre es <strong class='text-primary'>Denis Emanuel Lazarian</strong> y soy un desarrollador web junior aspirante a programador de perfil full stack. Me encanta aprender nuevas tecnologías y mejorar mis habilidades de programación. Actualmente, estoy aprendiendo <strong class='text-warning'>Angular</strong>  y reforzando mis conocimientos en <strong class='text-warning'>PHP</strong>, además del framework <strong class='text-warning'> Codeigniter 4</strong>.",
+    
+        "SECOND_PARAGRAPH":"Me gusta trabajar en equipo y sobre todo aprender de los demás. Me considero una persona responsable, proactiva y con muchas ganas de aprender.",
+        "THIRD_PARAGRAPH": "He estado trabajando en proyectos personales para mejorar mis habilidades de programación y aprender nuevas tecnologías. Puedes ver algunos de mis proyectos en la sección de <a role='button' class='text-primary' id='pro-link-item' (click)='selectLink('projects')'>Proyectos</a>. También he estado realizando prácticas de formación DUAL en la empresa EcityClic, donde he aprendido a trabajar en equipo y a desarrollar aplicaciones web en lenguaje <strong class='text-warning'>JAVA</strong>. Pueden ver de mi trabajo en la sección de ",
 
-        "SECOND_PARAGRAPH":"I like to work as a team and, above all, learn from others. I consider myself to be a responsible, proactive person and eager to learn.",
-        "THIRD_PARAGRAPH": "I've been working on personal projects to improve my skills and learn new technologies. I have also been doing dual training at EcityClic, where I have learned to work as a team and develop web applications in the language <strong class='text-warning'>JAVA</strong>. You can see some of my projects in the section of ",
+        "LIVE": "<span class='fw-semibold text-primary me-3  '>Ubicación:</span> Lleida, Cataluña (España). <br>",
+        "DOWNLOAD_CV": "Descargar CV",
+        "WORK": "<span class='fw-semibold text-primary me-3 mt-2'>Ocupación actual: </span> Estudiante de Desarrollo de Aplicaciones Web (IES Caparrella). <br>",
 
-        "LIVE": "<span class='fw-semibold text-primary me-3  '>Location:</span> Lleida, Catalonia (Spain). <br>",
-        "DOWNLOAD_CV": "Download CV",
-        "WORK": "<span class='fw-semibold text-primary me-3 mt-2'>Current Employment: </span> Studying the degree of Web Application Development (IES Caparrella). <br>",
+        "LANGUAGES_LABEL": "Idiomas",
 
-        "LANGUAGES_LABEL": "Languages",
+        "PROJECTS": "Proyectos",
 
-        "PROJECTS": "projects",
-
-
-        "SPANISH": "Spanish: High",
-        "CATALAN": "Catalan: High",
-        "ROMANIAN": "Romanian: Native",
-        "ENGLISH": "English: Half-Low"
+        "SPANISH": "Español: Alto",
+        "CATALAN": "Catalán: Alto",
+        "ROMANIAN": "Rumano: Nativo",
+        "ENGLISH": "Inglés: Medio-bajo"
     },
 
-    "CONTACT_TITLE": "Contact",
+    "CONTACT_TITLE": "Contacto",
 
     "PROJECTS":{
-        "TITLE": "Projects",
-        "DESCRIPTION": "Here you will find some of my personal projects most prominent.",
+        "TITLE": "proyectos",
+        "DESCRIPTION": "Aquí encontrarás algunos de mis proyectos personales más destacados.",
     
-        "PLACEHODEL_SEARCH": "Search by tags; PHP, JavaScript...",
-
-        "ALERT_MESSAGE": "There are no projects with the specified tag.",
-
-    
+        "PLACEHODEL_SEARCH": "Búsqueda por etiquetas; PHP, JavaScript...",
         "DAWLY": {
             "TITLE": "Daw.ly",
-            "DESCRIPTION": "It is a link manager system similar to the 'bitly' web platform, which allows you to shorten links and share them on social media. The system allows you to manage shortened links, in addition to being able to view visits to this link by selecting a range of days. For users with admin role, it also includes a user administration section, where you can view registered users, edit them, delete them and create new users."
+            "DESCRIPTION": "Se trata de un sistema gestor de links similar a la plataforma web 'bitly', el cual permite acortar links y compartirlos en las redes sociales. El sistema permite gestionar los links acortados, además de poder ver las visitas a ese link seleccionando un rango de días. Para los usuarios con rol administrador, incluye también una sección de administración de usuarios, donde se puede ver los usuarios registrados, editarlos, eliminarlos y crear nuevos usuarios."
         },
-            
+
+        "ALERT_MESSAGE": "No hay proyectos con esta etiqueta.",
+
+
         "CI4-NEWS":{
             "TITLE": "CI4-News",
-            "DESCRIPTION": "It is a simple news manager where news can be generated, edited, deleted and viewed. The system also has a user manager that includes role assignments, which are: Administrator, Editor and User. The system also has a user login and registration system, and some of its functions are restricted to unregistered users or users with specific roles."
+            "DESCRIPTION": "Se trata de un gestor de noticias simple donde se pueden generar, editar, eliminar y visualizar noticias. El sistema también dispone de un gestor de usuarios en los cuales se incluye la asignación de roles, los cuales son: Administrador, Editor y Usuario. El sistema también dispone de un sistema de login y registro de usuarios, y algunas de sus funciones están restringidas para usuarios no registrados o usuarios con rol de específico."
         },
+
+        
         
         "FLOURISH-AND-BLOTTS":{
             "TITLE": "Flourish and Blotts",
-            "DESCRIPTION": "It is a web project that simulates the service of a high school library, where you can see the available books, and you can also make requests for bookkeeping and bookkeeping. It also offers other services and functions for the role of responsible administrators, which are responsible for managing the library, where they perform basic functions such as managing books, assigning grants, setting penalties, among other functions. More information in project repository."
+            "DESCRIPTION": "Se trata de un proyecto web que simula el servicio de una biblioteca de instituto, donde se pueden ver los libros disponibles, y también se puede realizar peticiones de prestamos y reservas de libros. También ofrece otros servicios i funciones para el rol de administradores responsables, los cuales son los encargados de gestionar la biblioteca, donde realizan las funciones básicas como la de gestionar libros, asignar prestamos, establecer penalizaciones, entre otras funciones. Mas información en el repositorio del proyecto."
         }
+
     },
 
-
     "WORKS":{
-        "TRAGECTORY_TITLE": "Trajectoria",
-        "TRAGECTORY_DESCRIPTION": "Here you find my work experience and my academic career.",
-        "STATISTICS_TITLE": "My competencies",
-        "STATISTICS_DESCRIPTION": "That's how I evaluate my capabilities in every area, language or programming tool.",
-        
+        "TRAGECTORY_TITLE": "Trayectoria",
+        "TRAGECTORY_DESCRIPTION": "Aquí encontraras mi experiencia laboral y mi recorrido académico.",
+        "STATISTICS_TITLE": "Mis competencias",
+        "STATISTICS_DESCRIPTION": "Así avalúo mis capacidades en cada área, lenguaje o herramienta de programación.",
+
         "TIMELINE_ITEMS":{
             "ITEM_1": {
-                "TITLE": "bachelor's degree",
-                "DESCRIPTION": "I was a high school student in the Scientific-Technological modality, at the Institut la Mitjana in Pardinyes (Lleida-Catalonia, Spain)."
+                "TITLE": "Bachillerato",
+                "DESCRIPTION": "Fui estudiante de bachillerato en la modalidad Científico-Tecnológico, en el Instituto la Mitjana en Pardiñas (Lleida-Cataluña, España)."
             },
             "ITEM_2": {
-                "TITLE": "Format cycle upper grade (1st Course)",
-                "DESCRIPTION": "I enrolled in this year and studied the first DAW (Web Application Development) course, where I started to introduce and understand the art of programming in general. In this year I started my route in programming, with JAVA as the first language."
+                "TITLE": "Ciclo formativo grado superior (1er Curso)",
+                "DESCRIPTION": "En ese año me matriculé y estudié el primer curso de DAW (Desarrollo de Aplicaciones web), donde he empezado a introducir y entender el arte de la programación en general. En este año he empezado mi ruta en la programación, con el lenguaje JAVA como primer lenguaje."
             },
             "ITEM_3": {
-                "TITLE": "Format cycle upper grade (2nd Course)",
-                "DESCRIPTION": "I entered the most professional section of the web code in general this year. In this year, I started programming at frontend and backend level, developing myself, through practices and exercises, gaining experience with JavaScript and PHP languages, along with their frameworks, Angular and Codeigniter 4 respectively."
+                "TITLE": "Ciclo formativo grado superior (2nd Curso)",
+                "DESCRIPTION": "En este año me he introducido en el apartado más profesional del código web en general. En este año he empezado a programar a nivel de frontend y backend, desarrollándome a mí mismo, mediante prácticas y ejercicios, obteniendo experiencia con los lenguajes JavaScript y PHP, junto con sus frameworks, Angular y Codeigniter 4 respectivamente."
             },
             "ITEM_4": {
-                "TITLE": "Internship at a company (Dual Mode)",
-                "DESCRIPTION": "As well as being a student, I have also practiced dual-mode (over 1000 hours) in the company \"Ecityclic\" in Semic, where I have learned the ways of working in a company, and I have been able to put into practice my knowledge that I have been acquiring in the training cycle."
+                "TITLE": "Prácticas en empresa (modalidad DUAL)",
+                "DESCRIPTION": "Al mismo tiempo que he estado estudiando, también he realizado las prácticas de empresa en modalidad DUAL (duración de 1000 horas) en la empresa \"Ecityclic\" de Semic, donde he aprendido las formas de trabajar en una empresa, y he podido poner en práctica mis conocimientos que he estado adquiriendo en el ciclo formativo."
             }
         }
     }
 
+    
+
+
+
+
+
 }
+
