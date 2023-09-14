@@ -25,13 +25,15 @@
         "FIRST_PARAGRAPH": "Hola, mi nombre es <strong class='text-primary'>Denis Emanuel Lazarian</strong> y soy un desarrollador web junior aspirante a programador de perfil full stack. Me encanta aprender nuevas tecnologías y mejorar mis habilidades de programación. Actualmente, estoy aprendiendo <strong class='text-warning'>Angular</strong>  y reforzando mis conocimientos en <strong class='text-warning'>PHP</strong>, además del framework <strong class='text-warning'> Codeigniter 4</strong>.",
     
         "SECOND_PARAGRAPH":"Me gusta trabajar en equipo y sobre todo aprender de los demás. Me considero una persona responsable, proactiva y con muchas ganas de aprender.",
-        "THIRD_PARAGRAPH": "He estado trabajando en proyectos personales para mejorar mis habilidades de programación y aprender nuevas tecnologías. Puedes ver algunos de mis proyectos en la sección de <a role='button' class='text-primary' id='pro-link-item' (click)='selectLink('projects')'>Proyectos</a>. También he estado realizando prácticas de formación DUAL en la empresa EcityClic, donde he aprendido a trabajar en equipo y a desarrollar aplicaciones web en lenguaje <strong class='text-warning'>JAVA</strong>.",
+        "THIRD_PARAGRAPH": "He estado trabajando en proyectos personales para mejorar mis habilidades de programación y aprender nuevas tecnologías. Puedes ver algunos de mis proyectos en la sección de <a role='button' class='text-primary' id='pro-link-item' (click)='selectLink('projects')'>Proyectos</a>. También he estado realizando prácticas de formación DUAL en la empresa EcityClic, donde he aprendido a trabajar en equipo y a desarrollar aplicaciones web en lenguaje <strong class='text-warning'>JAVA</strong>. Pueden ver de mi trabajo en la sección de ",
 
         "LIVE": "<span class='fw-semibold text-primary me-3  '>Ubicación:</span> Lleida, Cataluña (España). <br>",
         "DOWNLOAD_CV": "Descargar CV",
         "WORK": "<span class='fw-semibold text-primary me-3 mt-2'>Ocupación actual: </span> Estudiante de Desarrollo de Aplicaciones Web (IES Caparrella). <br>",
 
         "LANGUAGES_LABEL": "Idiomas",
+
+        "PROJECTS": "Proyectos",
 
         "SPANISH": "Español: Alto",
         "CATALAN": "Catalán: Alto",
@@ -42,7 +44,7 @@
     "CONTACT_TITLE": "Contacto",
 
     "PROJECTS":{
-        "TITLE": "Proyectos",
+        "TITLE": "proyectos",
         "DESCRIPTION": "Aquí encontrarás algunos de mis proyectos personales más destacados.",
     
         "PLACEHODEL_SEARCH": "Búsqueda por etiquetas; PHP, JavaScript...",
@@ -50,6 +52,9 @@
             "TITLE": "Daw.ly",
             "DESCRIPTION": "Se trata de un sistema gestor de links similar a la plataforma web 'bitly', el cual permite acortar links y compartirlos en las redes sociales. El sistema permite gestionar los links acortados, además de poder ver las visitas a ese link seleccionando un rango de días. Para los usuarios con rol administrador, incluye también una sección de administración de usuarios, donde se puede ver los usuarios registrados, editarlos, eliminarlos y crear nuevos usuarios."
         },
+
+        "ALERT_MESSAGE": "No hay proyectos con esta etiqueta.",
+
 
         "CI4-NEWS":{
             "TITLE": "CI4-News",
